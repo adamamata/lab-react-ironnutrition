@@ -1,7 +1,7 @@
 import { Card, Col, Button } from 'antd'; 
 
 function FoodBox(props) {
-    const { food } = props; 
+    const { food, deleteFood } = props; 
 
     return (
         <Col>
