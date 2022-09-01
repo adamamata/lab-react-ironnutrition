@@ -5,7 +5,6 @@ import FoodBox from './components/FoodBox';
 import AddFoodForm from './components/AddFoodForm';
 import { v4 as uuidv4 } from 'uuid';
 
-
 function App() {
   const [foods, setFoods] = useState(foodsData);
 
@@ -14,7 +13,7 @@ function App() {
     foodsCopy.push(newFood);
     setFoods(foodsCopy);
   }
-  
+                                                
   const deleteFood = (foodName) => {
     const filtered = foods.filter((food) => food.name !== foodName);
     setFoods(filtered); 
